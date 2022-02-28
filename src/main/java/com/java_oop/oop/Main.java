@@ -1,7 +1,12 @@
 package com.java_oop.oop;
 
+import com.java_oop.logic.BubbleSort;
+
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args){
-        System.out.println("hello world");
+        BubbleSort<String> bubbleSort = new BubbleSort<>();
+        System.out.println("[result] " + bubbleSort.sort(Arrays.asList(args)));
     }
 }
